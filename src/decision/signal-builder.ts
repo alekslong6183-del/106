@@ -19,7 +19,7 @@ import { MIN_SAMPLES, MAX_SAMPLES } from './calibration-model';
 import { fallbackAtr } from './atr-fallback';
 import { sweepInvalidationDistance } from './signal-quality';
 import { STRATEGY_BONUS_PATTERNS } from '@/lib/pattern-categories';
-import { recommendedExpiry } from './recommended-expiry';
+import { recommendedExpiry, isPatternHorizonRejected } from './recommended-expiry';
 import { TIMEFRAME_SECONDS } from '@/data/symbols';
 import { estimateSpread } from './spread-estimate';
 import { computeDirectionScore } from './direction-prediction';
@@ -489,7 +489,9 @@ export function buildSignal(params: BuildSignalParams): Signal | null {
   // соответствующий чоп-риск (см. 4 сделки 2026-09-05) обосновывает более
   // длинную экспирацию, а не только штраф очков.
   const isRangeWithWeakTrend = snapshot.regime === 'range' && snapshot.indicators.adx !== null && snapshot.indicators.adx < REGIME_GATE_ADX_THRESHOLD;
-  const expiry = recommendedExpiry(timeframe, atrValue, entryPrice, isRangeWithWeakTrend);
+  const patternName = evidence.pattern?.name ?? null;
+  if (isPatternHorizonRejected(patternName)) return null;
+  const expiry = recommendedExpiry(patternName, timeframe, atrValue, entryPrice, isRangeWithWeakTrend);
   // BUGFIX (Фаза 0, синхронизация отображаемой и фактической экспирации):
   // раньше `recommendedExpiry` (секунды, адаптивный расчёт выше) уходил
   // ТОЛЬКО в Signal.recommendedExpiry для отображения на карточке

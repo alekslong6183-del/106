@@ -1,0 +1,1731 @@
+{
+  "meta": {
+    "symbols": [
+      "EURUSD",
+      "USDJPY"
+    ],
+    "timeframe": "1m",
+    "from": "2026-08-15",
+    "to": "2026-09-16",
+    "split": "walkforward",
+    "walkForwardFolds": 8,
+    "purgeBars": 30,
+    "wilsonMargin": 0,
+    "candles1mTotal": 61898,
+    "candlesResampledTotal": 61898,
+    "windowSize": 500,
+    "minSamples": 30,
+    "minSamplesForSignificance": 200,
+    "alpha": 0.05,
+    "generatedAt": "2026-09-17T08:51:07.775Z"
+  },
+  "poolMeta": {
+    "symbols": [
+      "EURUSD",
+      "USDJPY"
+    ],
+    "split": "walkforward",
+    "walkForwardFolds": 8,
+    "purgeBars": 30,
+    "wilsonMargin": 0,
+    "correlationWarning": "Пул содержит 2 инструментов. Корреляция между инструментами (особенно forex-парами с общей валютой) может завышать эффективный размер выборки. Для строгого учёта использовать кластерные стандартные ошибки или эффективный размер выборки. Текущая реализация НЕ корректирует p-value на внутрикластерную корреляцию — p-value интерпретируется как per-observation, не per-cluster.",
+    "perSymbolCandleCounts": [
+      {
+        "symbolId": "EURUSD",
+        "candles1m": 30949,
+        "candlesResampled": 30949
+      },
+      {
+        "symbolId": "USDJPY",
+        "candles1m": 30949,
+        "candlesResampled": 30949
+      }
+    ]
+  },
+  "results": [
+    {
+      "patternName": "marubozu-bullish",
+      "setupType": null,
+      "totalOccurrences": 45,
+      "trainValCount": 39,
+      "testCount": 6,
+      "bestExpiryBars": 2,
+      "testAccuracy": 0.8333333333333334,
+      "testWinCount": 5,
+      "testDecidedCount": 6,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": 0.4364905634363539,
+      "passesWilsonGate": false,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 27,
+          "testCount": 22,
+          "testDecided": 22,
+          "testAccuracy": 0.7272727272727273
+        },
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 18,
+          "testCount": 15,
+          "testDecided": 15,
+          "testAccuracy": 0.6666666666666666
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0.625,
+          "testAccuracy": 0.5555555555555556,
+          "testDecided": 36
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0.5714285714285714,
+          "testAccuracy": 0.7027027027027027,
+          "testDecided": 37
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0.7142857142857143,
+          "testAccuracy": 0.6216216216216216,
+          "testDecided": 37
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 8,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 2,
+          "trainCount": 12,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 3,
+          "trainCount": 17,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 4,
+          "trainCount": 17,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 5,
+          "trainCount": 26,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 6,
+          "trainCount": 28,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 7,
+          "trainCount": 39,
+          "bestExpiryBars": 2,
+          "testDecided": 6,
+          "testWins": 5
+        }
+      ]
+    },
+    {
+      "patternName": "fvg-nested",
+      "setupType": null,
+      "totalOccurrences": 62,
+      "trainValCount": 140,
+      "testCount": 22,
+      "bestExpiryBars": 30,
+      "testAccuracy": 0.5909090909090909,
+      "testWinCount": 13,
+      "testDecidedCount": 22,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": 0.3873447738289381,
+      "passesWilsonGate": false,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 35,
+          "testCount": 30,
+          "testDecided": 30,
+          "testAccuracy": 0.5333333333333333
+        },
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 27,
+          "testCount": 25,
+          "testDecided": 25,
+          "testAccuracy": 0.52
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0.8571428571428571,
+          "testAccuracy": 0.2777777777777778,
+          "testDecided": 54
+        },
+        {
+          "expiryBars": 10,
+          "trainValAccuracy": 0.8571428571428571,
+          "testAccuracy": 0.2830188679245283,
+          "testDecided": 53
+        },
+        {
+          "expiryBars": 20,
+          "trainValAccuracy": 1,
+          "testAccuracy": 0.2909090909090909,
+          "testDecided": 55
+        },
+        {
+          "expiryBars": 30,
+          "trainValAccuracy": 1,
+          "testAccuracy": 0.5272727272727272,
+          "testDecided": 55
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 7,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 2,
+          "trainCount": 7,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 3,
+          "trainCount": 20,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 4,
+          "trainCount": 24,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 5,
+          "trainCount": 40,
+          "bestExpiryBars": 30,
+          "testDecided": 2,
+          "testWins": 1
+        },
+        {
+          "fold": 6,
+          "trainCount": 42,
+          "bestExpiryBars": 30,
+          "testDecided": 16,
+          "testWins": 10
+        },
+        {
+          "fold": 7,
+          "trainCount": 58,
+          "bestExpiryBars": 30,
+          "testDecided": 4,
+          "testWins": 2
+        }
+      ]
+    },
+    {
+      "patternName": "order-block-nested",
+      "setupType": null,
+      "totalOccurrences": 81,
+      "trainValCount": 143,
+      "testCount": 41,
+      "bestExpiryBars": 5,
+      "testAccuracy": 0.5609756097560976,
+      "testWinCount": 23,
+      "testDecidedCount": 41,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": 0.41040265151757305,
+      "passesWilsonGate": false,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 51,
+          "testCount": 48,
+          "testDecided": 47,
+          "testAccuracy": 0.5957446808510638
+        },
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 30,
+          "testCount": 30,
+          "testDecided": 29,
+          "testAccuracy": 0.4827586206896552
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0.3333333333333333,
+          "testAccuracy": 0.5526315789473685,
+          "testDecided": 76
+        },
+        {
+          "expiryBars": 10,
+          "trainValAccuracy": 0.3333333333333333,
+          "testAccuracy": 0.4675324675324675,
+          "testDecided": 77
+        },
+        {
+          "expiryBars": 20,
+          "trainValAccuracy": 0.3333333333333333,
+          "testAccuracy": 0.4155844155844156,
+          "testDecided": 77
+        },
+        {
+          "expiryBars": 30,
+          "trainValAccuracy": 0.3333333333333333,
+          "testAccuracy": 0.5256410256410257,
+          "testDecided": 78
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 3,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 2,
+          "trainCount": 9,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 3,
+          "trainCount": 14,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 4,
+          "trainCount": 16,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 5,
+          "trainCount": 38,
+          "bestExpiryBars": 5,
+          "testDecided": 7,
+          "testWins": 4
+        },
+        {
+          "fold": 6,
+          "trainCount": 45,
+          "bestExpiryBars": 5,
+          "testDecided": 14,
+          "testWins": 7
+        },
+        {
+          "fold": 7,
+          "trainCount": 60,
+          "bestExpiryBars": 5,
+          "testDecided": 20,
+          "testWins": 12
+        }
+      ]
+    },
+    {
+      "patternName": "shooting-star",
+      "setupType": null,
+      "totalOccurrences": 130,
+      "trainValCount": 399,
+      "testCount": 76,
+      "bestExpiryBars": 2,
+      "testAccuracy": 0.5263157894736842,
+      "testWinCount": 40,
+      "testDecidedCount": 76,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": 0.4155183265272202,
+      "passesWilsonGate": false,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 81,
+          "testCount": 72,
+          "testDecided": 67,
+          "testAccuracy": 0.5671641791044776
+        },
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 49,
+          "testCount": 42,
+          "testDecided": 38,
+          "testAccuracy": 0.5789473684210527
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0.5625,
+          "testAccuracy": 0.5051546391752577,
+          "testDecided": 97
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0.5,
+          "testAccuracy": 0.5714285714285714,
+          "testDecided": 105
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0.5333333333333333,
+          "testAccuracy": 0.5047619047619047,
+          "testDecided": 105
+        },
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0.4375,
+          "testAccuracy": 0.5229357798165137,
+          "testDecided": 109
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 16,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 2,
+          "trainCount": 20,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 3,
+          "trainCount": 46,
+          "bestExpiryBars": 2,
+          "testDecided": 10,
+          "testWins": 3
+        },
+        {
+          "fold": 4,
+          "trainCount": 57,
+          "bestExpiryBars": 3,
+          "testDecided": 20,
+          "testWins": 8
+        },
+        {
+          "fold": 5,
+          "trainCount": 79,
+          "bestExpiryBars": 2,
+          "testDecided": 16,
+          "testWins": 11
+        },
+        {
+          "fold": 6,
+          "trainCount": 98,
+          "bestExpiryBars": 2,
+          "testDecided": 20,
+          "testWins": 12
+        },
+        {
+          "fold": 7,
+          "trainCount": 119,
+          "bestExpiryBars": 2,
+          "testDecided": 10,
+          "testWins": 6
+        }
+      ]
+    },
+    {
+      "patternName": "inside-bar",
+      "setupType": null,
+      "totalOccurrences": 5098,
+      "trainValCount": 18805,
+      "testCount": 3871,
+      "bestExpiryBars": 1,
+      "testAccuracy": 0.48695427538103847,
+      "testWinCount": 1885,
+      "testDecidedCount": 3871,
+      "baselineMean": 0.5,
+      "baselineStd": null,
+      "pValue": 0.10798348391071418,
+      "significant": false,
+      "wilsonLowerBound": 0.4712291429361832,
+      "passesWilsonGate": false,
+      "status": "ok",
+      "perSymbol": [
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 2655,
+          "testCount": 2228,
+          "testDecided": 1977,
+          "testAccuracy": 0.4795144157814871
+        },
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 2443,
+          "testCount": 2006,
+          "testDecided": 1880,
+          "testAccuracy": 0.5042553191489362
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0.5512820512820513,
+          "testAccuracy": 0.49157376199118485,
+          "testDecided": 3857
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0.5507955936352509,
+          "testAccuracy": 0.48411910669975183,
+          "testDecided": 4030
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0.5301932367149759,
+          "testAccuracy": 0.48286911510968694,
+          "testDecided": 4057
+        },
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0.5344418052256532,
+          "testAccuracy": 0.482421875,
+          "testDecided": 4096
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 860,
+          "bestExpiryBars": 2,
+          "testDecided": 360,
+          "testWins": 177
+        },
+        {
+          "fold": 2,
+          "trainCount": 1229,
+          "bestExpiryBars": 1,
+          "testDecided": 851,
+          "testWins": 413
+        },
+        {
+          "fold": 3,
+          "trainCount": 2190,
+          "bestExpiryBars": 1,
+          "testDecided": 356,
+          "testWins": 193
+        },
+        {
+          "fold": 4,
+          "trainCount": 2580,
+          "bestExpiryBars": 1,
+          "testDecided": 812,
+          "testWins": 398
+        },
+        {
+          "fold": 5,
+          "trainCount": 3459,
+          "bestExpiryBars": 1,
+          "testDecided": 366,
+          "testWins": 172
+        },
+        {
+          "fold": 6,
+          "trainCount": 3858,
+          "bestExpiryBars": 1,
+          "testDecided": 704,
+          "testWins": 326
+        },
+        {
+          "fold": 7,
+          "trainCount": 4629,
+          "bestExpiryBars": 1,
+          "testDecided": 422,
+          "testWins": 206
+        }
+      ]
+    },
+    {
+      "patternName": "impulse-breakout",
+      "setupType": null,
+      "totalOccurrences": 1315,
+      "trainValCount": 4890,
+      "testCount": 1030,
+      "bestExpiryBars": 2,
+      "testAccuracy": 0.48640776699029126,
+      "testWinCount": 501,
+      "testDecidedCount": 1030,
+      "baselineMean": 0.5,
+      "baselineStd": null,
+      "pValue": 0.40019730802300346,
+      "significant": false,
+      "wilsonLowerBound": 0.45599061087119075,
+      "passesWilsonGate": false,
+      "status": "ok",
+      "perSymbol": [
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 700,
+          "testCount": 567,
+          "testDecided": 551,
+          "testAccuracy": 0.4900181488203267
+        },
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 615,
+          "testCount": 499,
+          "testDecided": 478,
+          "testAccuracy": 0.4895397489539749
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0.4675324675324675,
+          "testAccuracy": 0.46546546546546547,
+          "testDecided": 999
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0.49173553719008267,
+          "testAccuracy": 0.4897959183673469,
+          "testDecided": 1029
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0.5,
+          "testAccuracy": 0.4673807205452775,
+          "testDecided": 1027
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 249,
+          "bestExpiryBars": 3,
+          "testDecided": 98,
+          "testWins": 45
+        },
+        {
+          "fold": 2,
+          "trainCount": 347,
+          "bestExpiryBars": 2,
+          "testDecided": 207,
+          "testWins": 89
+        },
+        {
+          "fold": 3,
+          "trainCount": 565,
+          "bestExpiryBars": 2,
+          "testDecided": 86,
+          "testWins": 50
+        },
+        {
+          "fold": 4,
+          "trainCount": 659,
+          "bestExpiryBars": 2,
+          "testDecided": 224,
+          "testWins": 103
+        },
+        {
+          "fold": 5,
+          "trainCount": 886,
+          "bestExpiryBars": 2,
+          "testDecided": 98,
+          "testWins": 43
+        },
+        {
+          "fold": 6,
+          "trainCount": 985,
+          "bestExpiryBars": 2,
+          "testDecided": 207,
+          "testWins": 105
+        },
+        {
+          "fold": 7,
+          "trainCount": 1199,
+          "bestExpiryBars": 2,
+          "testDecided": 110,
+          "testWins": 66
+        }
+      ]
+    },
+    {
+      "patternName": "strong-order-block-reaction",
+      "setupType": null,
+      "totalOccurrences": 2537,
+      "trainValCount": 8662,
+      "testCount": 2103,
+      "bestExpiryBars": 30,
+      "testAccuracy": 0.48549690917736565,
+      "testWinCount": 1021,
+      "testDecidedCount": 2103,
+      "baselineMean": 0.5,
+      "baselineStd": null,
+      "pValue": 0.19073427947393817,
+      "significant": false,
+      "wilsonLowerBound": 0.46418171886293896,
+      "passesWilsonGate": false,
+      "status": "ok",
+      "perSymbol": [
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 1273,
+          "testCount": 1074,
+          "testDecided": 1059,
+          "testAccuracy": 0.4806421152030217
+        },
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 1264,
+          "testCount": 1072,
+          "testDecided": 1055,
+          "testAccuracy": 0.500473933649289
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0.5350140056022409,
+          "testAccuracy": 0.492007992007992,
+          "testDecided": 2002
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0.5664893617021277,
+          "testAccuracy": 0.49019607843137253,
+          "testDecided": 2040
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0.5398936170212766,
+          "testAccuracy": 0.5016851227732306,
+          "testDecided": 2077
+        },
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0.5317460317460317,
+          "testAccuracy": 0.5072324011571842,
+          "testDecided": 2074
+        },
+        {
+          "expiryBars": 10,
+          "trainValAccuracy": 0.5180412371134021,
+          "testAccuracy": 0.5121025154247746,
+          "testDecided": 2107
+        },
+        {
+          "expiryBars": 20,
+          "trainValAccuracy": 0.5309278350515464,
+          "testAccuracy": 0.49504483246814535,
+          "testDecided": 2119
+        },
+        {
+          "expiryBars": 30,
+          "trainValAccuracy": 0.5703324808184144,
+          "testAccuracy": 0.49053926206244086,
+          "testDecided": 2114
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 384,
+          "bestExpiryBars": 2,
+          "testDecided": 200,
+          "testWins": 99
+        },
+        {
+          "fold": 2,
+          "trainCount": 593,
+          "bestExpiryBars": 30,
+          "testDecided": 364,
+          "testWins": 170
+        },
+        {
+          "fold": 3,
+          "trainCount": 964,
+          "bestExpiryBars": 30,
+          "testDecided": 165,
+          "testWins": 89
+        },
+        {
+          "fold": 4,
+          "trainCount": 1133,
+          "bestExpiryBars": 30,
+          "testDecided": 416,
+          "testWins": 176
+        },
+        {
+          "fold": 5,
+          "trainCount": 1550,
+          "bestExpiryBars": 20,
+          "testDecided": 213,
+          "testWins": 96
+        },
+        {
+          "fold": 6,
+          "trainCount": 1766,
+          "bestExpiryBars": 5,
+          "testDecided": 484,
+          "testWins": 239
+        },
+        {
+          "fold": 7,
+          "trainCount": 2272,
+          "bestExpiryBars": 10,
+          "testDecided": 261,
+          "testWins": 152
+        }
+      ]
+    },
+    {
+      "patternName": "order-block-continuation",
+      "setupType": null,
+      "totalOccurrences": 609,
+      "trainValCount": 2175,
+      "testCount": 509,
+      "bestExpiryBars": 10,
+      "testAccuracy": 0.4656188605108055,
+      "testWinCount": 237,
+      "testDecidedCount": 509,
+      "baselineMean": 0.5,
+      "baselineStd": null,
+      "pValue": 0.13172427920988197,
+      "significant": false,
+      "wilsonLowerBound": 0.4227033245965488,
+      "passesWilsonGate": false,
+      "status": "ok",
+      "perSymbol": [
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 317,
+          "testCount": 279,
+          "testDecided": 277,
+          "testAccuracy": 0.48736462093862815
+        },
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 292,
+          "testCount": 233,
+          "testDecided": 231,
+          "testAccuracy": 0.5238095238095238
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0.41237113402061853,
+          "testAccuracy": 0.49490835030549896,
+          "testDecided": 491
+        },
+        {
+          "expiryBars": 10,
+          "trainValAccuracy": 0.4842105263157895,
+          "testAccuracy": 0.5039370078740157,
+          "testDecided": 508
+        },
+        {
+          "expiryBars": 20,
+          "trainValAccuracy": 0.5416666666666666,
+          "testAccuracy": 0.4415841584158416,
+          "testDecided": 505
+        },
+        {
+          "expiryBars": 30,
+          "trainValAccuracy": 0.6354166666666666,
+          "testAccuracy": 0.42745098039215684,
+          "testDecided": 510
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 96,
+          "bestExpiryBars": 30,
+          "testDecided": 44,
+          "testWins": 19
+        },
+        {
+          "fold": 2,
+          "trainCount": 141,
+          "bestExpiryBars": 30,
+          "testDecided": 107,
+          "testWins": 42
+        },
+        {
+          "fold": 3,
+          "trainCount": 247,
+          "bestExpiryBars": 10,
+          "testDecided": 45,
+          "testWins": 25
+        },
+        {
+          "fold": 4,
+          "trainCount": 294,
+          "bestExpiryBars": 5,
+          "testDecided": 96,
+          "testWins": 42
+        },
+        {
+          "fold": 5,
+          "trainCount": 391,
+          "bestExpiryBars": 10,
+          "testDecided": 48,
+          "testWins": 23
+        },
+        {
+          "fold": 6,
+          "trainCount": 439,
+          "bestExpiryBars": 10,
+          "testDecided": 127,
+          "testWins": 64
+        },
+        {
+          "fold": 7,
+          "trainCount": 567,
+          "bestExpiryBars": 10,
+          "testDecided": 42,
+          "testWins": 22
+        }
+      ]
+    },
+    {
+      "patternName": "pin-bar",
+      "setupType": null,
+      "totalOccurrences": 107,
+      "trainValCount": 320,
+      "testCount": 65,
+      "bestExpiryBars": 5,
+      "testAccuracy": 0.4461538461538462,
+      "testWinCount": 29,
+      "testDecidedCount": 65,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": 0.3316933396913929,
+      "passesWilsonGate": false,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 59,
+          "testCount": 48,
+          "testDecided": 48,
+          "testAccuracy": 0.4583333333333333
+        },
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 48,
+          "testCount": 38,
+          "testDecided": 36,
+          "testAccuracy": 0.4722222222222222
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0.42857142857142855,
+          "testAccuracy": 0.5679012345679012,
+          "testDecided": 81
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0.45,
+          "testAccuracy": 0.5679012345679012,
+          "testDecided": 81
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0.5238095238095238,
+          "testAccuracy": 0.5432098765432098,
+          "testDecided": 81
+        },
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0.6666666666666666,
+          "testAccuracy": 0.4642857142857143,
+          "testDecided": 84
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 21,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 2,
+          "trainCount": 25,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 3,
+          "trainCount": 39,
+          "bestExpiryBars": 5,
+          "testDecided": 6,
+          "testWins": 3
+        },
+        {
+          "fold": 4,
+          "trainCount": 45,
+          "bestExpiryBars": 5,
+          "testDecided": 21,
+          "testWins": 8
+        },
+        {
+          "fold": 5,
+          "trainCount": 68,
+          "bestExpiryBars": 3,
+          "testDecided": 7,
+          "testWins": 2
+        },
+        {
+          "fold": 6,
+          "trainCount": 75,
+          "bestExpiryBars": 3,
+          "testDecided": 18,
+          "testWins": 8
+        },
+        {
+          "fold": 7,
+          "trainCount": 93,
+          "bestExpiryBars": 2,
+          "testDecided": 13,
+          "testWins": 8
+        }
+      ]
+    },
+    {
+      "patternName": "harmonic-pattern",
+      "setupType": null,
+      "totalOccurrences": 548,
+      "trainValCount": 2067,
+      "testCount": 407,
+      "bestExpiryBars": 20,
+      "testAccuracy": 0.4398034398034398,
+      "testWinCount": 179,
+      "testDecidedCount": 407,
+      "baselineMean": 0.5,
+      "baselineStd": null,
+      "pValue": 0.017239819518553468,
+      "significant": false,
+      "wilsonLowerBound": 0.3923655357241209,
+      "passesWilsonGate": false,
+      "status": "ok",
+      "perSymbol": [
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 323,
+          "testCount": 216,
+          "testDecided": 215,
+          "testAccuracy": 0.3674418604651163
+        },
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 225,
+          "testCount": 194,
+          "testDecided": 192,
+          "testAccuracy": 0.546875
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 10,
+          "trainValAccuracy": 0.4485294117647059,
+          "testAccuracy": 0.5235732009925558,
+          "testDecided": 403
+        },
+        {
+          "expiryBars": 20,
+          "trainValAccuracy": 0.5955882352941176,
+          "testAccuracy": 0.4520884520884521,
+          "testDecided": 407
+        },
+        {
+          "expiryBars": 30,
+          "trainValAccuracy": 0.6277372262773723,
+          "testAccuracy": 0.43243243243243246,
+          "testDecided": 407
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 138,
+          "bestExpiryBars": 30,
+          "testDecided": 41,
+          "testWins": 20
+        },
+        {
+          "fold": 2,
+          "trainCount": 179,
+          "bestExpiryBars": 20,
+          "testDecided": 45,
+          "testWins": 11
+        },
+        {
+          "fold": 3,
+          "trainCount": 225,
+          "bestExpiryBars": 20,
+          "testDecided": 35,
+          "testWins": 23
+        },
+        {
+          "fold": 4,
+          "trainCount": 260,
+          "bestExpiryBars": 20,
+          "testDecided": 76,
+          "testWins": 27
+        },
+        {
+          "fold": 5,
+          "trainCount": 336,
+          "bestExpiryBars": 10,
+          "testDecided": 60,
+          "testWins": 26
+        },
+        {
+          "fold": 6,
+          "trainCount": 397,
+          "bestExpiryBars": 10,
+          "testDecided": 134,
+          "testWins": 67
+        },
+        {
+          "fold": 7,
+          "trainCount": 532,
+          "bestExpiryBars": 10,
+          "testDecided": 16,
+          "testWins": 5
+        }
+      ]
+    },
+    {
+      "patternName": "marubozu-bearish",
+      "setupType": null,
+      "totalOccurrences": 36,
+      "trainValCount": 33,
+      "testCount": 3,
+      "bestExpiryBars": 1,
+      "testAccuracy": 0.3333333333333333,
+      "testWinCount": 1,
+      "testDecidedCount": 3,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": 0.061490315276160515,
+      "passesWilsonGate": false,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 23,
+          "testCount": 16,
+          "testDecided": 15,
+          "testAccuracy": 0.3333333333333333
+        },
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 13,
+          "testCount": 7,
+          "testDecided": 5,
+          "testAccuracy": 0.8
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0.38461538461538464,
+          "testAccuracy": 0.45,
+          "testDecided": 20
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0.5384615384615384,
+          "testAccuracy": 0.391304347826087,
+          "testDecided": 23
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0.6153846153846154,
+          "testAccuracy": 0.3333333333333333,
+          "testDecided": 21
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 13,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 2,
+          "trainCount": 13,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 3,
+          "trainCount": 14,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 4,
+          "trainCount": 18,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 5,
+          "trainCount": 25,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 6,
+          "trainCount": 26,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 7,
+          "trainCount": 33,
+          "bestExpiryBars": 1,
+          "testDecided": 3,
+          "testWins": 1
+        }
+      ]
+    },
+    {
+      "patternName": "fvg-return",
+      "setupType": null,
+      "totalOccurrences": 42,
+      "trainValCount": 70,
+      "testCount": 10,
+      "bestExpiryBars": 30,
+      "testAccuracy": 0.2,
+      "testWinCount": 2,
+      "testDecidedCount": 10,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": 0.05668094798069328,
+      "passesWilsonGate": false,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 26,
+          "testCount": 21,
+          "testDecided": 21,
+          "testAccuracy": 0.5714285714285714
+        },
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 16,
+          "testCount": 16,
+          "testDecided": 16,
+          "testAccuracy": 0.4375
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0.75,
+          "testAccuracy": 0.34375,
+          "testDecided": 32
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0.8,
+          "testAccuracy": 0.34285714285714286,
+          "testDecided": 35
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0.8,
+          "testAccuracy": 0.3611111111111111,
+          "testDecided": 36
+        },
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0.6,
+          "testAccuracy": 0.42857142857142855,
+          "testDecided": 35
+        },
+        {
+          "expiryBars": 10,
+          "trainValAccuracy": 0.6,
+          "testAccuracy": 0.22857142857142856,
+          "testDecided": 35
+        },
+        {
+          "expiryBars": 20,
+          "trainValAccuracy": 0.8,
+          "testAccuracy": 0.37142857142857144,
+          "testDecided": 35
+        },
+        {
+          "expiryBars": 30,
+          "trainValAccuracy": 0.8,
+          "testAccuracy": 0.5135135135135135,
+          "testDecided": 37
+        }
+      ],
+      "perFold": [
+        {
+          "fold": 1,
+          "trainCount": 5,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 2,
+          "trainCount": 6,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 3,
+          "trainCount": 16,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 4,
+          "trainCount": 19,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 5,
+          "trainCount": 25,
+          "bestExpiryBars": null,
+          "testDecided": 0,
+          "testWins": 0
+        },
+        {
+          "fold": 6,
+          "trainCount": 31,
+          "bestExpiryBars": 30,
+          "testDecided": 7,
+          "testWins": 2
+        },
+        {
+          "fold": 7,
+          "trainCount": 39,
+          "bestExpiryBars": 30,
+          "testDecided": 3,
+          "testWins": 0
+        }
+      ]
+    },
+    {
+      "patternName": "liquidity-sweep",
+      "setupType": "reversal-at-key-level",
+      "totalOccurrences": 24,
+      "trainValCount": 7,
+      "testCount": 17,
+      "bestExpiryBars": null,
+      "testAccuracy": null,
+      "testWinCount": null,
+      "testDecidedCount": null,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": null,
+      "passesWilsonGate": null,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 12,
+          "testCount": 8,
+          "testDecided": 0,
+          "testAccuracy": null
+        },
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 12,
+          "testCount": 9,
+          "testDecided": 0,
+          "testAccuracy": null
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0.5714285714285714,
+          "testAccuracy": 0.1875,
+          "testDecided": 16
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0.3333333333333333,
+          "testAccuracy": 0.35294117647058826,
+          "testDecided": 17
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0.5714285714285714,
+          "testAccuracy": 0.47058823529411764,
+          "testDecided": 17
+        }
+      ],
+      "perFold": []
+    },
+    {
+      "patternName": "bearish-harami",
+      "setupType": null,
+      "totalOccurrences": 4,
+      "trainValCount": 2,
+      "testCount": 2,
+      "bestExpiryBars": null,
+      "testAccuracy": null,
+      "testWinCount": null,
+      "testDecidedCount": null,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": null,
+      "passesWilsonGate": null,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 3,
+          "testCount": 2,
+          "testDecided": 0,
+          "testAccuracy": null
+        },
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 1,
+          "testCount": 0,
+          "testDecided": 0,
+          "testAccuracy": null
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0.5,
+          "testAccuracy": 0.5,
+          "testDecided": 2
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0.5,
+          "testAccuracy": 0.5,
+          "testDecided": 2
+        },
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.5,
+          "testDecided": 2
+        },
+        {
+          "expiryBars": 10,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.5,
+          "testDecided": 2
+        }
+      ],
+      "perFold": []
+    },
+    {
+      "patternName": "bullish-harami",
+      "setupType": null,
+      "totalOccurrences": 6,
+      "trainValCount": 2,
+      "testCount": 4,
+      "bestExpiryBars": null,
+      "testAccuracy": null,
+      "testWinCount": null,
+      "testDecidedCount": null,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": null,
+      "passesWilsonGate": null,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 3,
+          "testCount": 1,
+          "testDecided": 0,
+          "testAccuracy": null
+        },
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 3,
+          "testCount": 3,
+          "testDecided": 0,
+          "testAccuracy": null
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0.5,
+          "testAccuracy": 0.3333333333333333,
+          "testDecided": 3
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0.5,
+          "testAccuracy": 0.25,
+          "testDecided": 4
+        },
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.25,
+          "testDecided": 4
+        },
+        {
+          "expiryBars": 10,
+          "trainValAccuracy": 0.5,
+          "testAccuracy": 0.75,
+          "testDecided": 4
+        }
+      ],
+      "perFold": []
+    },
+    {
+      "patternName": "liquidity-sweep-reaction",
+      "setupType": "reversal-at-key-level",
+      "totalOccurrences": 2,
+      "trainValCount": 0,
+      "testCount": 2,
+      "bestExpiryBars": null,
+      "testAccuracy": null,
+      "testWinCount": null,
+      "testDecidedCount": null,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": null,
+      "passesWilsonGate": null,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 1,
+          "testCount": 1,
+          "testDecided": 0,
+          "testAccuracy": null
+        },
+        {
+          "symbolId": "USDJPY",
+          "totalOccurrences": 1,
+          "testCount": 1,
+          "testDecided": 0,
+          "testAccuracy": null
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.5,
+          "testDecided": 2
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.5,
+          "testDecided": 2
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0,
+          "testAccuracy": 1,
+          "testDecided": 2
+        }
+      ],
+      "perFold": []
+    },
+    {
+      "patternName": "inverted-hammer",
+      "setupType": null,
+      "totalOccurrences": 3,
+      "trainValCount": 0,
+      "testCount": 3,
+      "bestExpiryBars": null,
+      "testAccuracy": null,
+      "testWinCount": null,
+      "testDecidedCount": null,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": null,
+      "passesWilsonGate": null,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 3,
+          "testCount": 3,
+          "testDecided": 0,
+          "testAccuracy": null
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.3333333333333333,
+          "testDecided": 3
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.6666666666666666,
+          "testDecided": 3
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.3333333333333333,
+          "testDecided": 3
+        },
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.3333333333333333,
+          "testDecided": 3
+        }
+      ],
+      "perFold": []
+    },
+    {
+      "patternName": "hammer",
+      "setupType": null,
+      "totalOccurrences": 3,
+      "trainValCount": 0,
+      "testCount": 3,
+      "bestExpiryBars": null,
+      "testAccuracy": null,
+      "testWinCount": null,
+      "testDecidedCount": null,
+      "baselineMean": null,
+      "baselineStd": null,
+      "pValue": null,
+      "significant": null,
+      "wilsonLowerBound": null,
+      "passesWilsonGate": null,
+      "status": "insufficient-data",
+      "perSymbol": [
+        {
+          "symbolId": "EURUSD",
+          "totalOccurrences": 3,
+          "testCount": 3,
+          "testDecided": 0,
+          "testAccuracy": null
+        }
+      ],
+      "perExpiry": [
+        {
+          "expiryBars": 1,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.3333333333333333,
+          "testDecided": 3
+        },
+        {
+          "expiryBars": 2,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.6666666666666666,
+          "testDecided": 3
+        },
+        {
+          "expiryBars": 3,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.3333333333333333,
+          "testDecided": 3
+        },
+        {
+          "expiryBars": 5,
+          "trainValAccuracy": 0,
+          "testAccuracy": 0.3333333333333333,
+          "testDecided": 3
+        }
+      ],
+      "perFold": []
+    }
+  ]
+}

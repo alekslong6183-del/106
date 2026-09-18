@@ -44,13 +44,13 @@ describe('fallbackAtr', () => {
 
 describe('recommendedExpiry', () => {
   it('returns at least 1 timeframe for low volatility', () => {
-    const expiry = recommendedExpiry('15m', 0.001, 100);
+    const expiry = recommendedExpiry(null, '15m', 0.001, 100);
     expect(expiry).toBeGreaterThanOrEqual(900);
   });
 
   it('returns more bars for lower volatility', () => {
-    const lowVol = recommendedExpiry('15m', 0.001, 100);
-    const highVol = recommendedExpiry('15m', 2, 100);
+    const lowVol = recommendedExpiry(null, '15m', 0.001, 100);
+    const highVol = recommendedExpiry(null, '15m', 2, 100);
     expect(lowVol).toBeGreaterThan(highVol);
   });
 });
